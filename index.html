@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lê Duy Bảo - JS279</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Add favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      class="rounded-circle"
+      href="/images/duybaoIMG/logoCirle.ico"
+    />
+    <!--font awesome version 4.7.0-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .box {
+      background-color: rgb(255, 255, 255, 0.9);
+      border-radius: 20px;
+      box-sizing: border-box;
+      max-width: 450px;
+      padding: 0;
+    }
+
+    .header-box {
+      background: #233d7f;
+      color: rgb(255, 255, 255, 0.8);
+      border-radius: 20px 20px 0 0;
+      padding: 10px 0;
+    }
+
+    .header-box p {
+      margin: 0;
+    }
+
+    .footer-box {
+      background: #233d7f;
+      color: rgb(255, 255, 255, 0.8);
+      border-radius: 0 0 20px 20px;
+      padding: 10px 15px;
+      text-align: left;
+    }
+
+    .footer-box p {
+      font-size: 14px;
+      color: rgb(255, 255, 255, 0.8);
+      margin-bottom: 0px;
+    }
+
+    .footer-box p a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-box p a:hover {
+      color: rgb(255, 255, 255, 0.8);
+    }
+
+    .footer-box p a i {
+      margin-right: 10px;
+    }
+
+    .content-box {
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .img-profile {
+      margin: 10px 0 10px 0;
+      border-radius: 10%;
+    }
+    .heading {
+      color: #008000;
+      margin: 0;
+    }
+
+    body {
+      animation: fadeInAnimation ease 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      background-image: url("images/duybaoIMG/Jungle-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media screen and (max-width: 1000px){
+        body {
+        background-image: url("images/duybaoIMG/Jungle-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    @media screen and (max-width: 568px){
+        body {
+        background-image: url("images/duybaoIMG/Jungle-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+      
+
+    .profile-info {
+      text-align: left;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.2rem;
+    }
+
+    .profile-info span {
+      font-weight: 400;
+    }
+
+    .profile-info a {
+      font-weight: 400;
+      text-decoration: none;
+      color: #212529;
+    }
+
+    .profile-info a:hover {
+      color: #008000;
+    }
+
+    .sub-heading{
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0px;
+    }
+
+    .btn-dark{
+      background-color: #008000; border: none;
+    }
+
+    .btn-dark:hover{
+      background-color: #006600; border: none;
+;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container-fluid ">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-lg-3 col-md-3"></div>
+                <div class="col-lg-6 col-md-6 col-12 centered box">
+                  <div class="header-box">
+                    <p class="">Trường đại học Khoa Học Tự Nhiên</p>
+                    <p
+                      class="h5 text-uppercase"
+                      style="color: #f5f5f5; letter-spacing: 2px"
+                    >
+                      Trung tâm tin học
+                    </p>
+                  </div>
+                  <div class="content-box">
+                    <p class="sub-heading">- JS11.279T26 -</p>
+                    <p class="h3 heading">Lập trình JavaScript </p>
+                    <img
+                      src="images/duybaoIMG/avatar-2.jpg"
+                      class="w-50 img-profile fade-in"
+                      alt=""
+                    />
+                    <p class=" " style="font-size: 1rem; font-style: italic">
+                      - Ảnh minh họa: Đệ tử ruột thầy Tuấn -
+                    </p>
+                    <div class="profile-info">
+                      <p class="profile-content">
+                        Học viên: <span class="">Lê Duy Bảo</span>
+                      </p>
+                      <p class="profile-content">
+                        SĐT: <a href="tel: 0528390442">0528 390 442</a>
+                      </p>
+                      <p class="profile-content">
+                        Email: <a href="mailto: leduybao1410@gmail.com">leduybao1410@gmail.com</a>
+                      </p>
+                      
+                    </div>
+                    <a
+                      class="btn btn-dark"
+                      style="border-radius: 20px; padding: 5px 15px"
+                      href="./home/"
+                      >Vào trang chủ</a
+                    >
+                  </div>
+                  <div class="footer-box">
+                    <p
+                      class="h4"
+                      style="text-transform: uppercase; color: #f5f5f5; margin-bottom: 5px;"
+                    >
+                      Liên hệ - Trụ sở chính
+                    </p>
+                    <p>
+                      <a
+                        target="”_blank”"
+                        href="https://www.google.com/maps/place/227+Nguy%E1%BB%85n+V%C4%83n+C%E1%BB%AB,+Ph%C6%B0%E1%BB%9Dng+4,+Qu%E1%BA%ADn+5,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7625216,106.6801375,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f1bfc262bf1:0x4e843897f2900135!8m2!3d10.7625216!4d106.6823262!16s%2Fg%2F11gd39rctx"
+                        ><i class="fa fa-map-marker" aria-hidden="true"></i> 227
+                        Nguyễn Văn Cừ, P4, Quận 5, Tp HCM</a
+                      >
+                    </p>
+                    <p>
+                      <a href="tel: (028) 3835 1056"
+                        ><i class="fa fa-phone" aria-hidden="true"></i>(028)
+                        3835 1056</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script>
+        window.setTimeout(()=>{
+            window.location="./home"
+        },3000)
+    </script>   -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
