@@ -36,9 +36,20 @@ MongoClient.connect(uri).then(client => {
         console.log(err)
     })
     */
-    // Đọc điện thoại trong collection mobile có mã số là IPHONE_1 find() -> toArray()
+    //Đọc điện thoại trong collection mobile có mã số là IPHONE_1 find() -> toArray()
     let filter = {
-        "Ma_so": "IPHONE_100"
+        $and: [{
+            "Nhom_Dien_thoai.Ma_so" : "IPHONE"
+        },
+          {
+            "Don_gia_Ban" :  {
+                $gt: 10000000
+            }
+          }  
+        ]
+    }
+    let sort = {
+        "Don_gia_Ban":1
     }
     /*
     client.db(dbName).collection("mobile").find(filter).toArray().then(result => {
@@ -49,7 +60,7 @@ MongoClient.connect(uri).then(client => {
     })
     */
     // Đọc điện thoại trong collection mobile có mã số là IPHONE_1 findOne() -> object
-    client.db(dbName).collection("mobile").findOne(filter).then(result => {
+    client.db(dbName).collection("mobile").find(filter).sort(sort).toArray().then(result => {
         console.log(result)
         client.close()
     }).catch(err => {
